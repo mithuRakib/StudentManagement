@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".views.AddStudentFragment">
+
+<!--    stFName, stLName, stMajor, stGPA, stPhone-->
+    <ScrollView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/stFName"
+                android:hint="First Name (Min 3 Characters)"
+                android:textAllCaps="false"
+                android:layout_margin="10dp"
+                android:paddingLeft="15dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/stLName"
+                android:hint="Last Name (Min 3 Characters)"
+                android:textAllCaps="false"
+                android:layout_margin="10dp"
+                android:paddingLeft="15dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/stMajor"
+                android:hint="Major (Min 3 Characters)"
+                android:textAllCaps="false"
+                android:layout_margin="10dp"
+                android:paddingLeft="15dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/stGPA"
+                android:hint="GPA (Must not be Empty or Null)"
+                android:textAllCaps="false"
+                android:layout_margin="10dp"
+                android:paddingLeft="15dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/stPhone"
+                android:hint="Phone (Optional)"
+                android:textAllCaps="false"
+                android:layout_margin="10dp"
+                android:paddingLeft="15dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_weight="2"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cancelButton"
+            android:text="Cancel"
+            android:textAllCaps="false"/>
+
+        <View
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"/>
+
+        <Button
+            android:layout_weight="2"
+            android:layout_marginRight="20dp"
+            android:id="@+id/saveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:textAllCaps="false" />
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
